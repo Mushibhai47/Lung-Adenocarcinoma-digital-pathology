@@ -1,0 +1,197 @@
+======================================================================
+CHAPTER 2 STATISTICAL ANALYSIS -- ACTUAL DATA FROM SPSS
+Analysis date: 2026-05-28
+Total cohort: n = 172
+Death events: 73  |  Alive/censored: 99
+======================================================================
+
+----------------------------------------------------------------------
+A. COHORT CHARACTERISTICS
+----------------------------------------------------------------------
+Age: mean 66.6 years (SD 9.3; range 33–84)
+Sex: Female 64 (37.2%), Male 108 (62.8%)
+Follow-up: median 73.7 months (IQR 37.7–92.5; range 0.3–119.3)
+
+STAGING (actual from SPSS):
+  Stage I  (IA1+IA2+IA3+IB): 100 (58.1%)
+    IA1: 7, IA2: 19, IA3: 21, IB: 53
+  Stage II (IIA+IIB):         47 (27.3%)
+    IIA: 8, IIB: 39
+  Stage III(IIIA+IIIB):       25 (14.5%)
+    IIIA: 22, IIIB: 3
+
+NODAL STATUS:
+  N0: 134 (77.9%)
+  N1: 31 (18.0%)
+  N2: 7 (4.1%)
+  N+ (N1+N2): 38 (22.1%)
+
+HISTOLOGIC FEATURES:
+  STAS positive: 41 (23.8%)
+  STAS unknown:  1
+  LVI positive:  47 (27.3%)
+  VPI positive:  94 (54.7%)
+  Margins positive: 1 (0.6%)
+
+HISTOLOGIC GROWTH PATTERN (predominant):
+  acinar: 82 (47.7%)
+  solid: 24 (14.0%)
+  papilar: 17 (9.9%)
+  micropapilar: 15 (8.7%)
+  lepidic: 10 (5.8%)
+  Not assessable/NA: 24
+
+PATHOLOGICAL DIAGNOSIS:
+  Invasive non-mucinous adenocarcinoma: 142 (82.6%)
+  Invasive mucinous adenocarcinoma: 13 (7.6%)
+  Pleomorphic carcinoma: 8 (4.7%)
+  Adenosquamous carcinoma: 4 (2.3%)
+  Mixed invasive mucinous and non-mucinous: 3 (1.7%)
+  Colloid adenocarcinoma: 1 (0.6%)
+  Enteric-type adenocarcinoma: 1 (0.6%)
+
+MOLECULAR RESULTS (n=173 total; 109 not tested):
+  Not tested: 108 (62.8%)
+  Tested: 64
+    no mutation: 39 (60.9% of tested)
+    EGFR exon 19 del: 11 (17.2% of tested)
+    EGFR other: 5 (7.8% of tested)
+    EGFR L858R: 2 (3.1% of tested)
+    ALK rearrangement: 2 (3.1% of tested)
+    ALK fusion: 1 (1.6% of tested)
+    ROS1 rearrangement: 1 (1.6% of tested)
+    RET fusion: 1 (1.6% of tested)
+    KRAS G12C: 2 (3.1% of tested)
+  TOTAL EGFR mutations: 18 (28.1% of tested; 10.5% of all)
+  NOTE: KRAS G12C only 2 cases -- too few for survival analysis
+
+PDL1 IHC (n=105 tested):
+  PDL1 <1%%:     59 (56.7% of tested)
+  PDL1 >=1%%:    45 (43.3% of tested)
+  Not tested:   68
+
+VIMENTIN IHC (n=140 tested):
+  Vimentin negative: 75 (54.0% of tested)
+  Vimentin positive: 64 (46.0% of tested)
+  Not tested:        33
+
+----------------------------------------------------------------------
+B. KAPLAN-MEIER SURVIVAL ANALYSIS
+----------------------------------------------------------------------
+(n=172, 73 death events)
+
+STAS analysis: n=171 (1 unknown excluded)
+STAS:
+  STAS-negative (n=130, events=50): 5-yr OS = 71.2%, median OS = not reached
+  STAS-positive (n=41, events=23): 5-yr OS = 51.2%, median OS = 61.1 months
+  Log-rank chi2 = 4.808, p = 0.028 [SIGNIFICANT]
+
+Lymphovascular invasion (LVI):
+  LVI-negative (n=125, events=53): 5-yr OS = 67.5%, median OS = not reached
+  LVI-positive (n=47, events=20): 5-yr OS = 63.8%, median OS = 100.1 months
+  Log-rank chi2 = 0.170, p = 0.680 [not significant]
+
+Visceral pleural invasion (VPI):
+  VPI-negative (n=78, events=28): 5-yr OS = 75.6%, median OS = not reached
+  VPI-positive (n=94, events=45): 5-yr OS = 58.9%, median OS = 89.1 months
+  Log-rank chi2 = 3.215, p = 0.073 [not significant]
+
+Nodal status (pN):
+  N0 (n=134, events=49): 5-yr OS = 73.7%, median OS = not reached
+  N+ (N1 or N2) (n=38, events=24): 5-yr OS = 40.7%, median OS = 40.4 months
+  Log-rank chi2 = 15.698, p < 0.001 [SIGNIFICANT]
+
+Pathologic stage (I vs II/III):
+  Stage I (n=100, events=38): 5-yr OS = 70.8%, median OS = not reached
+  Stage II/III (n=72, events=35): 5-yr OS = 60.7%, median OS = 88.5 months
+  Log-rank chi2 = 2.149, p = 0.143 [not significant]
+
+Sex (M vs F):
+  Male (n=108, events=51): 5-yr OS = 61.4%, median OS = 89.1 months
+  Female (n=64, events=22): 5-yr OS = 75.0%, median OS = not reached
+  Log-rank chi2 = 3.356, p = 0.067 [not significant]
+
+PDL1 analysis: n=104 tested cases
+PD-L1 expression (IHC):
+  PDL1 <1% (n=59, events=21): 5-yr OS = 72.3%, median OS = not reached
+  PDL1 >=1% (n=45, events=16): 5-yr OS = 68.9%, median OS = not reached
+  Log-rank chi2 = 0.069, p = 0.793 [not significant]
+
+Vimentin analysis: n=139 tested cases
+Vimentin IHC:
+  Vimentin-negative (n=75, events=29): 5-yr OS = 72.7%, median OS = not reached
+  Vimentin-positive (n=64, events=30): 5-yr OS = 59.4%, median OS = 88.5 months
+  Log-rank chi2 = 1.627, p = 0.202 [not significant]
+
+Solid pattern analysis: n=148 (NA excluded)
+Predominant solid pattern:
+  Non-solid predominant (n=124, events=49): 5-yr OS = 68.3%, median OS = not reached
+  Solid predominant (n=24, events=12): 5-yr OS = 69.7%, median OS = 88.5 months
+  Log-rank chi2 = 0.780, p = 0.377 [not significant]
+
+EGFR analysis: n=64 tested cases
+EGFR mutation (among tested):
+  EGFR wild-type (n=46, events=21): 5-yr OS = 71.7%, median OS = 89.1 months
+  EGFR-mutant (n=18, events=6): 5-yr OS = 77.8%, median OS = not reached
+  Log-rank chi2 = 1.393, p = 0.238 [not significant]
+
+----------------------------------------------------------------------
+C. UNIVARIATE COX REGRESSION
+----------------------------------------------------------------------
+
+  STAS (0=No, 1=Yes):
+    HR = 1.73 (95%% CI 1.05–2.84), p = 0.030 *
+  LVI (0=No, 1=Yes):
+    HR = 1.10 (95%% CI 0.66–1.85), p = 0.705 
+  VPI (0=No, 1=Yes):
+    HR = 1.52 (95%% CI 0.94–2.43), p = 0.085 
+  pN+ (0=N0, 1=N+):
+    HR = 2.60 (95%% CI 1.58–4.26), p < 0.001 ***
+  Stage II/III (0=I, 1=II/III):
+    HR = 1.39 (95%% CI 0.88–2.20), p = 0.158 
+  Sex (0=M, 1=F):
+    HR = 0.64 (95%% CI 0.39–1.05), p = 0.080 
+
+  PD-L1 >=1%% (n=104):
+    HR = 0.92 (95%% CI 0.48–1.76), p = 0.793 
+  Vimentin positive (n=139):
+    HR = 1.39 (95%% CI 0.83–2.32), p = 0.205 
+
+----------------------------------------------------------------------
+D. MULTIVARIABLE COX REGRESSION
+----------------------------------------------------------------------
+
+Variables eligible (p < 0.10 univariate): ['STAS', 'VPI', 'pN+', 'Sex_F']
+
+Model 1 (STAS + LVI + VPI + pN+ + Stage): n=171, events=73
+  C-index: 0.670
+  STAS: HR=1.39 (95%% CI 0.82–2.33), p = 0.221 
+  LVI: HR=0.91 (95%% CI 0.54–1.55), p = 0.735 
+  VPI: HR=1.41 (95%% CI 0.85–2.33), p = 0.184 
+  pN+: HR=3.12 (95%% CI 1.50–6.50), p = 0.002 **
+  Stage II/III: HR=0.64 (95%% CI 0.32–1.28), p = 0.202 
+
+Model 2 (+ PDL1, among tested n=103, events=37):
+  C-index: 0.631
+  STAS: HR=1.41 (95%% CI 0.67–2.98), p = 0.364 
+  LVI: HR=0.98 (95%% CI 0.47–2.07), p = 0.967 
+  VPI: HR=2.04 (95%% CI 0.96–4.34), p = 0.066 
+  pN+: HR=1.46 (95%% CI 0.56–3.80), p = 0.437 
+  Stage II/III: HR=0.85 (95%% CI 0.37–1.95), p = 0.697 
+  PDL1 >=1%: HR=0.94 (95%% CI 0.49–1.82), p = 0.859 
+
+======================================================================
+KEY FINDINGS SUMMARY FOR CHAPTER 2
+======================================================================
+1. Cohort: n=172, 73 deaths, median follow-up 73.7 months
+   Sex: 64 female (37.2%), mean age 66.6 years
+2. Stage: I=100 (58.1%), II=47 (27.3%), III=25 (14.5%)
+3. STAS=41 cases (24.0%), 5-yr OS: 71.2% vs 51.2%, log-rank p = 0.028
+4. LVI=47 cases (27.3%), 5-yr OS: 67.5% vs 63.8%, log-rank p = 0.680
+5. VPI=94 cases (54.7%), 5-yr OS: 75.6% vs 58.9%, log-rank p = 0.073
+6. N+=38 cases (22.1%), 5-yr OS: 73.7% vs 40.7%, log-rank p < 0.001
+7. Stage II/III=72 cases, 5-yr OS Stage I: 70.8% vs Stage II/III: 60.7%, log-rank p = 0.143
+8. PDL1 (n=104 tested): PDL1<1%%: 72.3% vs PDL1>=1%%: 68.9%, log-rank p = 0.793
+9. Vimentin (n=139 tested): neg: 72.7% vs pos: 59.4%, log-rank p = 0.202
+10. EGFR (n=64 tested): WT: 71.7% vs mutant: 77.8%, log-rank p = 0.238
+11. Solid pattern (n=148): non-solid: 68.3% vs solid: 69.7%, log-rank p = 0.377

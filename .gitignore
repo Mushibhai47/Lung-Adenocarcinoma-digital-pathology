@@ -1,0 +1,56 @@
+# ── Patient data (NEVER commit) ──────────────────────────────────────────
+*.sav
+Lung_june2025*.xlsx
+Lung_june2025*.csv
+Complete_Data_Table.xlsx
+Study_Results.xlsx
+analysis_results.csv
+lymphocyte_results*.csv
+tumor_cell_results*.csv
+qupath_summary.csv
+region_results.csv
+image_results.csv
+image_summary.csv
+km_results_correct.json
+results_cache.json
+nul
+
+# ── QuPath binary slide data ──────────────────────────────────────────────
+*.qpdata
+*.dat
+*.mrxs
+*.svs
+*.ndpi
+*.tiff
+*.tif
+*.scn
+
+# ── QuPath project data folders (patient slides) ──────────────────────────
+data/
+slides/
+vania_Project/
+myproject/
+project_v2/
+qpproject/
+project/
+project.qpproj/
+output/
+*.backup
+
+# ── Thesis (contains patient-specific results) ────────────────────────────
+thesis.docx
+thesis_draft.docx
+thesis_final.docx
+~$*.docx
+
+# ── Temp / OS files ───────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+*.pyo
+.claude/
+
+# ── Keep these (aggregate results, no patient IDs) ───────────────────────
+!statistical_summary.txt
+!chapter2_results.txt

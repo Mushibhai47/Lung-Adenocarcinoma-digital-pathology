@@ -1,0 +1,156 @@
+======================================================================
+STATISTICAL SUMMARY -- LUNG ADENOCARCINOMA DIGITAL PATHOLOGY THESIS
+======================================================================
+Analysis date: 2026-05-27
+Analytical cohort: 141 cases (complete density + clinical data, STAS=99 excluded)
+Death events: 63 | Alive/censored: 78
+Survival follow-up: median 71.5 months (IQR 30.8-88.0; range 0-114 months)
+
+NOTE: lifelines 0.30.3 contains a known log-rank bug with tied event times.
+Log-rank p-values were verified using a manual implementation.
+Cox regression results were unaffected.
+
+----------------------------------------------------------------------
+A. DESCRIPTIVE STATISTICS (n=141 unless noted)
+----------------------------------------------------------------------
+Lymphocyte density (cells/mm2):
+  Mean +/- SD:    466.07 +/- 733.03
+  Median (IQR): 101.94 (21.22-601.13)
+  Range:        0.00-3478.75
+
+Tumour cell density (cells/mm2):
+  Mean +/- SD:    1171.72 +/- 860.44
+  Median (IQR): 1112.00 (373.88-1774.41)
+  Range:        4.00-3792.88
+
+Tumour:lymphocyte ratio (n=140):
+  Mean +/- SD:    23.23 +/- 49.90
+  Median (IQR): 6.23 (2.69-17.19)
+  Range:        0.46-329.12
+
+----------------------------------------------------------------------
+B. INTRA-TUMORAL VARIABILITY (Pearson r, ROI 1 vs ROI 2; n=141 pairs)
+----------------------------------------------------------------------
+Lymphocyte density:   r=0.882, p<0.001, CV=162.5%
+Tumour cell density:  r=0.907, p<0.001, CV=75.1%
+
+----------------------------------------------------------------------
+C. ASSOCIATIONS WITH CLINICOPATHOLOGIC FEATURES (Mann-Whitney U test)
+   Values reported as median (IQR) cells/mm2
+----------------------------------------------------------------------
+
+STAS (negative n=105, positive n=36):
+  Lymphocyte density:
+    STAS-negative: 153.5 (23.6-560.6) | STAS-positive: 63.1 (20.1-617.8)
+    U=2018, p=0.547 [not significant]
+  Tumour cell density:
+    STAS-negative: 1175.0 (440.4-1774.4) | STAS-positive: 847.2 (299.7-1710.1)
+    U=2107, p=0.306 [not significant]
+  Tumour:lymphocyte ratio:
+    STAS-negative: 6.3 (2.7-16.7) | STAS-positive: 5.7 (2.8-21.4)
+    U=1781, p=0.666 [not significant]
+
+Nodal status -- pN (N0 n=106, N+ n=35):
+  Lymphocyte density:
+    N0: 132.8 (25.1-559.5) | N+: 68.0 (15.9-669.6)
+    U=1931, p=0.719 [not significant]
+  Tumour cell density:
+    N0: 1145.6 (411.3-1725.0) | N+: 1019.8 (295.6-1840.1)
+    U=1896, p=0.847 [not significant]
+  Tumour:lymphocyte ratio:
+    N0: 6.3 (2.8-17.2) | N+: 5.2 (2.4-17.0)
+    U=1882, p=0.832 [not significant]
+
+Stage group (Stage I n=76, Stage II/III n=65):
+  Lymphocyte density:
+    Stage I: 132.8 (29.2-549.6) | Stage II/III: 89.8 (16.5-643.9)
+    U=2619, p=0.539 [not significant]
+  Tumour cell density:
+    Stage I: 1145.6 (441.4-1724.2) | Stage II/III: 1019.8 (333.9-1852.6)
+    U=2597, p=0.601 [not significant]
+  Tumour:lymphocyte ratio:
+    Stage I: 6.3 (2.8-16.8) | Stage II/III: 5.6 (2.6-17.5)
+    U=2426, p=0.982 [not significant]
+
+Lymphovascular invasion (negative n=98, positive n=43):
+  Lymphocyte density:
+    LVI-negative: 88.2 (19.6-553.7) | LVI-positive: 296.2 (25.9-622.5)
+    U=1888, p=0.327 [not significant]
+  Tumour cell density:
+    LVI-negative: 1069.1 (319.0-1626.6) | LVI-positive: 1383.9 (552.4-2019.7)
+    U=1747, p=0.107 [not significant]
+  Tumour:lymphocyte ratio:
+    LVI-negative: 6.4 (2.7-18.1) | LVI-positive: 4.8 (2.7-16.3)
+    U=2183, p=0.571 [not significant]
+
+Visceral pleural invasion (negative n=60, positive n=81):
+  Lymphocyte density:
+    VPI-negative: 98.6 (14.9-617.1) | VPI-positive: 116.5 (25.0-556.2)
+    U=2277, p=0.525 [not significant]
+  Tumour cell density:
+    VPI-negative: 1047.6 (351.9-1692.1) | VPI-positive: 1161.4 (411.2-1839.0)
+    U=2232, p=0.410 [not significant]
+  Tumour:lymphocyte ratio:
+    VPI-negative: 6.3 (2.6-20.0) | VPI-positive: 6.0 (2.8-16.7)
+    U=2388, p=0.997 [not significant]
+
+----------------------------------------------------------------------
+D. SURVIVAL ANALYSIS (n=140, 63 death events)
+----------------------------------------------------------------------
+
+KAPLAN-MEIER (median dichotomisation, manual log-rank):
+
+Lymphocyte density (median split 109.2 cells/mm2):
+  Low  (n=70, events=31): 5-yr OS = 60.5%, median OS = not reached
+  High (n=70, events=32): 5-yr OS = 67.1%, median OS = 100.0 months
+  Log-rank chi2=0.033, p=0.855 [not significant]
+
+Tumour cell density (median split 1122.4 cells/mm2):
+  Low  (n=70, events=29): 5-yr OS = 63.5%, median OS = not reached
+  High (n=70, events=34): 5-yr OS = 64.3%, median OS = 86.0 months
+  Log-rank chi2=0.394, p=0.530 [not significant]
+
+Tumour:lymphocyte ratio (median split 6.2):
+  Low  (n=70, events=31): 5-yr OS = 67.1%, median OS = 100.0 months
+  High (n=70, events=32): 5-yr OS = 60.6%, median OS = not reached
+  Log-rank chi2=0.280, p=0.596 [not significant]
+
+UNIVARIATE COX REGRESSION (log-transformed continuous variables):
+  Lymphocyte density:      HR=1.03 (95% CI 0.91-1.16), p=0.661
+  Tumour cell density:     HR=1.04 (95% CI 0.85-1.27), p=0.713
+  Tumour:lymphocyte ratio: HR=0.96 (95% CI 0.78-1.16), p=0.651
+
+----------------------------------------------------------------------
+E. MULTIVARIABLE COX REGRESSION (n=140, 63 events)
+----------------------------------------------------------------------
+
+Model 1 (Base: Stage_group + STAS + pN)  C-index = 0.640:
+  Stage_group: HR=1.04 (95% CI 0.86-1.25), p=0.684
+  STAS:        HR=1.23 (95% CI 0.70-2.18), p=0.473
+  pN:          HR=1.61 (95% CI 0.95-2.73), p=0.076 [trend toward significance]
+
+Model 2 (Extended: Base + log_lymp + log_tumor)  C-index = 0.631:
+  Stage_group: HR=1.04 (95% CI 0.86-1.26), p=0.672
+  STAS:        HR=1.23 (95% CI 0.70-2.18), p=0.473
+  pN:          HR=1.65 (95% CI 0.97-2.81), p=0.066 [trend toward significance]
+  log_lymp:    HR=1.02 (95% CI 0.85-1.22), p=0.855
+  log_tumor:   HR=1.06 (95% CI 0.77-1.44), p=0.730
+
+C-index change: 0.640 -> 0.631 (delta = -0.009)
+Addition of digital pathology variables did NOT improve model discrimination.
+
+======================================================================
+KEY FINDINGS SUMMARY
+======================================================================
+1. Cohort: 141 cases, 63 deaths, median follow-up 71.5 months
+2. Descriptive: Wide heterogeneity in lymphocyte density (CV 162.5%);
+   tumour cell density more stable (CV 75.1%)
+3. Intra-tumoral: Excellent inter-ROI reproducibility (lymp r=0.882,
+   tumor r=0.907, both p<0.001)
+4. Clinicopathologic: NO significant associations found for any metric
+   with STAS, pN, Stage, LVI, or VPI (all p>0.30)
+5. Survival: NO significant difference in OS by high/low dichotomisation
+   for any metric (all log-rank p>0.50); univariate Cox all p>0.65
+6. Multivariable: Digital pathology variables did not improve the base
+   clinical model (C-index 0.640 vs 0.631; digital vars p>0.70)
+======================================================================
